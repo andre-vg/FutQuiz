@@ -7,5 +7,5 @@ const PORT = process.env.PORT || 5000;
 app.use("/", teste);
 
 app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
+  console.log(`️‍ 🔥 Server started at ${PORT}`);
 });
