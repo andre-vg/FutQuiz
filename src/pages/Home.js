@@ -13,8 +13,6 @@ function Home() {
         <h2 className='font montserrar text-slate-100 text-2xl'>Responda as perguntas a seguir de acordo com as alternativas
           disponiveis para testar seu conhecimento sobre futebol</h2>
       </div>
-      <br>  
-      </br>
       <Link
         to="/game"
         className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4 text-center"
