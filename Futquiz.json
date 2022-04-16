@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "pergunta": "Zico está no top 5 artilheiros da Seleção Brasileira?",
+    "resposta": "V",
+    "imagem": "https://tntsports.com.br/__export/1587408324645/sites/esporteinterativo/img/2020/04/20/zico-1280x720_1.jpg_1902800913.jpg"
+  },
+  {
+    "id": "2",
+    "pergunta": "A primeira copa do mundo foi sediada na América do Sul? ",
+    "resposta": "V",
+    "imagem": "https://dyn1.heritagestatic.com/lf?set=path%5B1%2F5%2F6%2F3%2F6%2F15636354%5D&call=url%5Bfile%3Aproduct.chain%5D"
+  },
+  {
+    "id": "3",
+    "pergunta": "Rivaldo foi o artilheiro da copa de 2002?",
+    "resposta": "F",
+    "imagem": "https://preview.redd.it/eq6hg3dwdgm81.jpg?width=640&crop=smart&auto=webp&s=06e2f03b4a5c5ce8f6149eefe0ecbe6416c92da2"
+  },
+  {
+    "id": "4",
+    "pergunta": "Brasil alcançou o pentacampeonato em 1994?",
+    "resposta": "F",
+    "imagem": "https://logodownload.org/wp-content/uploads/2017/11/cbf-logo-selecao-logo-brasil-2.png"
+  }
+]
