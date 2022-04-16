@@ -8,16 +8,19 @@ function Home() {
         <h1 className="font-bold bebas text-slate-100 text-9xl">
           FUT<strong className="text-green-500">QUIZ</strong>
         </h1>
-        <br>
-        </br>
-        <h2 className='font montserrar text-slate-100 text-2xl'>Responda as perguntas a seguir de acordo com as alternativas
-          disponiveis para testar seu conhecimento sobre futebol</h2>
+        <br></br>
+        <h2 className="font montserrar text-slate-100 text-2xl">
+          Responda as perguntas a seguir para testar seu conhecimento sobre
+          futebol!
+        </h2>
       </div>
       <Link
         to="/game"
         className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4 text-center"
       >
-        Jogar
+        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4 text-center">
+          Jogar
+        </button>
       </Link>
     </div>
   );
