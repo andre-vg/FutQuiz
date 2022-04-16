@@ -8,11 +8,11 @@ function Home() {
         <h1 className="font-bold bebas text-slate-100 text-9xl">
           FUT<strong className="text-green-500">QUIZ</strong>
         </h1>
-        <br></br>
         <h2 className="font montserrar text-slate-100 text-2xl">
           Responda as perguntas a seguir para testar seu conhecimento sobre
           futebol!
         </h2>
+        <br>
       </div>
       <Link
         to="/game"
