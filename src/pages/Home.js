@@ -12,7 +12,7 @@ function Home() {
           Responda as perguntas a seguir para testar seu conhecimento sobre
           futebol!
         </h2>
-        <br>
+        <br />
       </div>
       <Link
         to="/game"
