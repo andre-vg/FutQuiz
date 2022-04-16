@@ -14,10 +14,7 @@ function Home() {
         </h2>
         <br />
       </div>
-      <Link
-        to="/game"
-        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4 text-center"
-      >
+      <Link to="/game">
         <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4 text-center">
           Jogar
         </button>
