@@ -1,0 +1,95 @@
+{
+    "questoes": [
+        {
+            "numQuestao": 0,
+            "pergunta": "pergunta",
+            "alternativaA": "Alternativa A",
+            "alternativaB": "Alternativa B",
+            "correta": "Alternativa A"
+        },
+        {
+            "numQuestao": 1,
+            "pergunta": "A primeira copa do mundo foi sediada na América do Sul?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 2,
+            "pergunta": "Rivaldo foi o artilheiro da copa de 2002?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Falso"
+        },
+        {
+            "numQuestao": 3,
+            "pergunta": "Brasil alcançou o pentacampeonato em 1994?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Falso"
+        },
+        {
+            "numQuestao": 4,
+            "pergunta": "O Palmeiras é o time brasileiro com mais participações na libertadores?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 5,
+            "pergunta": "O Palmeiras é o clube brasileiro com mais títulos de libertadores?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 6,
+            "pergunta": "Cristiano Ronaldo é o maior artilheiro da história da UEFA Champions League?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 7,
+            "pergunta": "Flamengo é o maior campeão carioca?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 8,
+            "pergunta": "A Seleção Brasileira ficou em terceiro lugar na Copa do Mundo de 2014, realizada no Brasil?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Falso"
+        },
+        {
+            "numQuestao": 9,
+            "pergunta": "O Bahia já foi campeão brasileiro?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 10,
+            "pergunta": "A Itália está classificada para a Copa do Mundo de 2022?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 11,
+            "pergunta": "O Kaká foi a única pessoa a ganhar uma Bola de Ouro quando Messi e Cristiano Ronaldo estavam participando da premiação?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        },
+        {
+            "numQuestao": 12,
+            "pergunta": "O maior público já registrado em um estádio de futebol brasileiro foi na final da Copa do Mundo de 1950, no Maracanã?",
+            "alternativaA": "Verdadeiro",
+            "alternativaB": "Falso",
+            "correta": "Verdadeiro"
+        }
+    ]
+}

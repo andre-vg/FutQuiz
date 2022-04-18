@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutQuiz</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <main class="tela-principal">
+        <section class="conteudos">
+
+            <h1 id='titulo'>App</h1>
+
+            <article class="questao">
+
+                <header class="topoQuestao">
+                    <span id='nQuestao'>?</span>
+                    <h2 id='pergunta'>???</h2>
+                </header>
+
+                <div class='corpoQuestao'>
+                    <ol class='alternativas'>
+                        <li id="a" value="1A" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id="b" value="1B" class='letras' onClick='verificarSeAcertou(this, this)'></li>
+
+                    </ol>
+                </div>
+
+                <footer id='aviso' class='rodapeQuestao centro'>
+                    <span id='numero'></span>
+                    de <span id='total'></span>
+                </footer>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+
+    <input type="hidden" id='correct' name='correct' value='' />
+    <script src="index.js"></script>
+</body>
+
+</html>
