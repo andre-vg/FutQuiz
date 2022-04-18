@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "pergunta": "Zico está no top 5 artilheiros da Seleção Brasileira?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "2",
+    "pergunta": "A primeira copa do mundo foi sediada na América do Sul? ",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "3",
+    "pergunta": "Rivaldo foi o artilheiro da copa de 2002?",
+    "resposta": "F",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "4",
+    "pergunta": "Brasil alcançou o pentacampeonato em 1994?",
+    "resposta": "F",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "5",
+    "pergunta": "O Palmeiras é o time brasileiro com mais participações na libertadores?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "6",
+    "pergunta": "O Palmeiras é o clube brasileiro com mais títulos de libertadores? ",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "7",
+    "pergunta": "Cristiano Ronaldo é o maior artilheiro da história da UEFA Champions League?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "8",
+    "pergunta": "Flamengo é o maior campeão carioca?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "9",
+    "pergunta": "A Seleção Brasileira ficou em terceiro lugar na Copa do Mundo de 2014, realizada no Brasil?",
+    "resposta": "F",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "10",
+    "pergunta": "o Bahia já foi campeão brasileiro?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "11",
+    "pergunta": "A Itália está classificada para a Copa do Mundo de 2022?",
+    "resposta": "F",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "12",
+    "pergunta": "O Kaká foi a única pessoa a ganhar uma Bola de Ouro quando Messi e Cristiano Ronaldo estavam participando da premiação?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  },
+  {
+    "id": "13",
+    "pergunta": "O maior público já registrado em um estádio de futebol brasileiro foi na final da Copa do Mundo de 1950, no Maracanã?",
+    "resposta": "V",
+    "imagem": "colocar_imagem"
+  }
+]

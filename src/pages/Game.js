@@ -14,6 +14,8 @@ function Game() {
             <p class="text-xl font-bold text-slate-200 mx-10 text-justify">
               "Romário é o 4° maior artilheiro da Seleção Brasileira de Futebol"
             </p>
+            <br>
+            </br>
           </div>
         </div>
       </figure>
