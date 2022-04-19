@@ -10,7 +10,7 @@ rows = sheet.rows
 
 # Escrever o conteudo do excel em json
 
-f = open('Futquiz.json', 'w', encoding='utf-8')
+f = open('./src/Futquiz.json', 'w', encoding='utf-8')
 f.write('[\n')
 
 id = 0

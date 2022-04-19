@@ -9,13 +9,12 @@ function Game() {
           src="https://s.hs-data.com/bilder/spieler/gross/1940.jpg"
           alt=""
         />
-        <div class="w-[75%]">
+        <div className="w-[75%]">
           <div className="mt-[90px]">
             <p class="text-xl font-bold text-slate-200 mx-10 text-justify">
               "Romário é o 4° maior artilheiro da Seleção Brasileira de Futebol"
             </p>
-            <br>
-            </br>
+            <br></br>
           </div>
         </div>
       </figure>
