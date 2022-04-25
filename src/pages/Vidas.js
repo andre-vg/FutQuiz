@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import bola from "../assets/bola.png";
+import xis from "../assets/xis.png";
 
 function Vidas(props) {
   const { vidas } = props;
@@ -10,21 +12,9 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
         </div>
       );
     }
@@ -34,16 +24,9 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
         </div>
       );
     }
@@ -53,20 +36,22 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img
-            className="h-[100%] w-[5%] mx-4"
-            src="https://freesvg.org/img/1552187822.png"
-            alt=""
-          />
+          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
         </div>
       );
     }
     if (vidas === 0) {
       return (
         <div
-          className="text-center bebasGrudado text-7xl mt-[3%] flex justify-center"
+          className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
-        ></div>
+        >
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+        </div>
       );
     }
   };

@@ -10,6 +10,7 @@ function GameSimple() {
   const [imagem, setImagem] = useState("");
   const [vidas, setVidas] = useState(3);
   const game = useRef(null);
+  const [questaoUsada, setQuestaoUsada] = useState([]);
 
   const handleFalso = () => {
     if (perguntas[aleatorio].resposta === "F") {
@@ -61,11 +62,12 @@ function GameSimple() {
   };
 
   const geraQuestao = () => {
-    //random number beetwen 0 and the length of the array
     if (vidas > 0) {
       const random = Math.floor(Math.random() * perguntas.length);
       setAleatorio(random);
       setQuestao(perguntas[random].pergunta);
+      questaoUsada.push(perguntas[random].id);
+      console.log(questaoUsada);
       setImagem(perguntas[random].imagem);
     } else {
       console.log("Game Over!");
@@ -75,7 +77,8 @@ function GameSimple() {
 
   useEffect(() => {
     geraQuestao();
-  }, []);
+    setQuestaoUsada([]);
+  }, [1]);
 
   return (
     <>
