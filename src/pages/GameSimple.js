@@ -103,6 +103,7 @@ function GameSimple() {
               className="h-[100%] w-[30%] ml-0 rounded-l-3xl"
               src={imagem}
               alt=""
+              loading="eager"
             ></img>
 
             <div className="w-[70%] self-center Montserrat mx-2 font-bold text-xl">
