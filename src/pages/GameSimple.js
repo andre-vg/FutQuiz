@@ -65,10 +65,15 @@ function GameSimple() {
     if (vidas > 0) {
       const random = Math.floor(Math.random() * perguntas.length);
       setAleatorio(random);
-      setQuestao(perguntas[random].pergunta);
-      questaoUsada.push(perguntas[random].id);
-      console.log(questaoUsada);
-      setImagem(perguntas[random].imagem);
+      console.log(random);
+      if (questaoUsada.includes(random)) {
+        geraQuestao();
+      } else {
+        setQuestao(perguntas[random].pergunta);
+        questaoUsada.push(random);
+        console.log(questaoUsada);
+        setImagem(perguntas[random].imagem);
+      }
     } else {
       console.log("Game Over!");
       handleGameOver();
@@ -78,7 +83,7 @@ function GameSimple() {
   useEffect(() => {
     geraQuestao();
     setQuestaoUsada([]);
-  }, [1]);
+  }, []);
 
   return (
     <>

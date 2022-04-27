@@ -19,7 +19,7 @@ id = 0
 for row in rows:
     id += 1
     f.write('{\n')
-    f.write('"id": "' + str(id) + '",\n')
+    f.write('"id": ' + str(id) + ',\n')
     for cell in row:
         # if cell have "B" in it print cell.value
         if "B" in str(cell):
