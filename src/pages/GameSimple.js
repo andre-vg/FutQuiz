@@ -39,6 +39,11 @@ function GameSimple() {
       document.getElementById("game").innerHTML = "";
       document.getElementById("vidas").innerHTML = "";
       document.getElementById("pontos").innerHTML = "";
+
+      if (ponto > localStorage.getItem("MaiorScore")) {
+        localStorage.setItem("MaiorScore", ponto);
+      }
+
       render(
         <div className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <div className="row">
@@ -53,7 +58,25 @@ function GameSimple() {
                   {ponto}
                 </strong>
               </h2>
+              <h2 className="text-slate-300 font-bold text-3xl">
+                Maior pontuação:
+                <strong className="font-extrabold text-sky-600 text-4xl ml-1">
+                  {localStorage.getItem("MaiorScore")}
+                </strong>
+              </h2>
             </div>
+          </div>
+          <div className="row">
+            <button className="bg-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl">
+              <a href="/dev">
+                <h2 className="text-slate-300 text-3xl font-extrabold">
+                  Jogar
+                  <strong className="font-extrabold text-black text-3xl ml-2">
+                    novamente
+                  </strong>
+                </h2>
+              </a>
+            </button>
           </div>
         </div>,
         document.getElementById("game")
