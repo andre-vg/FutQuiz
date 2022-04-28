@@ -7,7 +7,7 @@ function Test() {
         <div class="property-card">
           <div class="property-image">
             <div class="property-image-title">
-              {/* <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. --> */}
+              {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
             </div>
           </div>
           <div class="property-description">
