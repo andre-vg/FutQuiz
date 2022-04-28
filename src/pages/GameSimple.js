@@ -2,6 +2,10 @@ import { React, useEffect, useState, useRef } from "react";
 import { render } from "react-dom";
 import perguntas from "../Futquiz.json";
 import Vidas from "./Vidas";
+import { TwitterShareButton } from "react-share";
+import { TwitterIcon } from "react-share";
+
+
 
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -77,6 +81,13 @@ function GameSimple() {
                 </h2>
               </a>
             </button>
+            <div>
+            <TwitterShareButton title={"Fiz " + ponto + " pontos no #futQuiz" + " Veja quantos você acerta em: " } url={"https://futquiz-4jzdgd9x6-andre-vg.vercel.app/"} hashtags={["FutQuiz"]}
+      >
+        <TwitterIcon className="bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl" size={80} round />
+      </TwitterShareButton>
+            
+          </div>
           </div>
         </div>,
         document.getElementById("game")
