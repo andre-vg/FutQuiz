@@ -71,7 +71,7 @@ function GameSimple() {
               <a href="/dev">
                 <h2 className="text-slate-300 text-3xl font-extrabold">
                   Jogar
-                  <strong className="font-extrabold text-black text-3xl ml-2">
+                  <strong className="font-extrabold text-slate-300 text-3xl ml-2">
                     novamente
                   </strong>
                 </h2>

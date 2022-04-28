@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
 body{
-    @apply bg-slate-600
+    @apply bg-gradient-to-r from-green-700 to-emerald-500;
 }
 .bebas{
     font-family: 'Bebas Neue', cursive;
