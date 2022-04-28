@@ -19,6 +19,11 @@ function Home() {
           Jogar
         </button>
       </Link>
+      <Link to="/dev">
+        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 mx-8 rounded mt-4 text-center">
+          Dev
+        </button>
+      </Link>
     </div>
   );
 }
