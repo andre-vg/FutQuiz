@@ -82,7 +82,7 @@ function GameSimple() {
               </a>
             </button>
             <div>
-              <TwitterShareButton title={"🎯 Acertei " + ponto + " Perguntas no #futQuiz ⚽ " + " \n Veja quantas você acerta em: \n"} url={"https://futquiz-4jzdgd9x6-andre-vg.vercel.app/ \n"} hashtags={["FutQuiz"]}>
+              <TwitterShareButton title={"🎯 Acertei " + ponto + " Perguntas no #futQuiz ⚽ " + " \n Veja quantas você acerta em: \n"} url={"https://futquiz-master.vercel.app/ \n"} hashtags={["FutQuiz"]}>
                 <TwitterIcon className="bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl" size={80} round />
               </TwitterShareButton>
             </div>
