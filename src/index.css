@@ -88,7 +88,7 @@ p {
     -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image: url('https://i.ytimg.com/vi/dihnz0won64/maxresdefault.jpg');
+    /* background-image: url('https://i.ytimg.com/vi/dihnz0won64/maxresdefault.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }

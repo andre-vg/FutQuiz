@@ -5,8 +5,6 @@ import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
 import { TwitterIcon } from "react-share";
 
-
-
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
   const [ponto, setPonto] = useState(0);
@@ -82,8 +80,21 @@ function GameSimple() {
               </a>
             </button>
             <div>
-              <TwitterShareButton title={"🎯 Acertei " + ponto + " Perguntas no #futQuiz ⚽ " + " \n Veja quantas você acerta em: \n"} url={"https://futquiz-master.vercel.app/ \n"} hashtags={["FutQuiz"]}>
-                <TwitterIcon className="bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl" size={80} round />
+              <TwitterShareButton
+                title={
+                  "🎯 Acertei " +
+                  ponto +
+                  " Perguntas no #FutQuiz ⚽ " +
+                  " \n Veja quantas você acerta em: \n"
+                }
+                url={"https://futquiz-master.vercel.app/ \n"}
+                hashtags={["FutQuiz"]}
+              >
+                <TwitterIcon
+                  className="bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl"
+                  size={80}
+                  round
+                />
               </TwitterShareButton>
             </div>
           </div>
@@ -126,36 +137,35 @@ function GameSimple() {
         Pontos: {ponto}
       </div>
       <div id="game" ref={game}>
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center h-[44%] w-[50%] bg-slate-400 rounded-3xl shadow-2xl">
-          {/* <h1>Game FUTQUIZ dev</h1>
-
-        <div>{ponto}</div> */}
-          <div className="flex h-full">
-            <img
-              className="h-[100%] w-[30%] ml-0 rounded-l-3xl"
-              src={imagem}
-              alt=""
-              loading="eager"
-            ></img>
-
-            <div className="w-[70%] self-center Montserrat mx-2 font-bold text-xl">
-              <h1>- {questao}</h1>
+        <div class="center">
+          <div class="property-card">
+            <div className={"property-card-image bg-[url('" + imagem + "')]"}>
+              <div class="property-image-title">
+                {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
+              </div>
             </div>
-          </div>
-
-          <div className="flex absolute justify-around top-[110%] but">
-            <button
-              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-8 rounded text-center"
-              onClick={handleVerdadeiro}
-            >
-              Correto
-            </button>
-            <button
-              class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-8 rounded text-center"
-              onClick={handleFalso}
-            >
-              Errado
-            </button>
+            <div class="property-description">
+              <h5> Card Title </h5>
+              <p>{questao} </p>
+            </div>
+            <div className="row h-16 mt-[32rem] flex">
+              <div className="col-6">
+                <button
+                  className="bg-green-500 hover:bg-green-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
+                  onClick={handleVerdadeiro}
+                >
+                  Verdadeiro
+                </button>
+              </div>
+              <div className="col-6">
+                <button
+                  className="bg-red-500 hover:bg-red-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
+                  onClick={handleFalso}
+                >
+                  Falso
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
