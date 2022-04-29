@@ -18,22 +18,22 @@ function GameSimple() {
     if (perguntas[aleatorio].resposta === "F") {
       console.log("Você acertou!");
       setPonto(ponto + 1);
+      geraQuestao();
     } else {
       console.log("Você errou!");
       setVidas(vidas - 1);
     }
-    geraQuestao();
   };
 
   const handleVerdadeiro = () => {
     if (perguntas[aleatorio].resposta === "V") {
       console.log("Você acertou!");
       setPonto(ponto + 1);
+      geraQuestao();
     } else {
       console.log("Você errou!");
       setVidas(vidas - 1);
     }
-    geraQuestao();
   };
 
   const handleGameOver = () => {
@@ -116,6 +116,9 @@ function GameSimple() {
         questaoUsada.push(random);
         console.log(questaoUsada);
         setImagem(perguntas[random].imagem);
+        document.getElementById(
+          "imagem"
+        ).style.backgroundImage = `url(${perguntas[random].imagem})`;
       }
     } else {
       console.log("Game Over!");
@@ -124,22 +127,25 @@ function GameSimple() {
   };
 
   useEffect(() => {
-    geraQuestao();
-    setQuestaoUsada([]);
-  }, []);
+    if (vidas === 0) {
+      handleGameOver();
+    } else {
+      geraQuestao();
+    }
+  }, [vidas]);
 
   return (
     <>
       <div id="vidas">
         <Vidas vidas={vidas} />
       </div>
-      <div className="text-center bebasGrudado text-7xl m-[1%]" id="pontos">
+      <div className="text-center bebasGrudado text-7xl mt-[1%]" id="pontos">
         Pontos: {ponto}
       </div>
       <div id="game" ref={game}>
         <div class="center">
           <div class="property-card">
-            <div className={"property-card-image bg-[url('" + imagem + "')]"}>
+            <div className={"property-image"} id="imagem">
               <div class="property-image-title">
                 {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
               </div>
