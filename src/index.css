@@ -4,9 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
-body{
-    @apply bg-slate-600
-}
+
 .bebas{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
@@ -47,9 +45,14 @@ p {
 }
 
 .center {
-    height: 100vh;
+    /* height: 100vh;
     width: 100%;
-    display: flex;
+    display: flex; */
+    margin-top: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     justify-content: center;
     align-items: center;
 }
@@ -72,7 +75,7 @@ p {
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     overflow: hidden;
-    @apply shadow-2xl
+    @apply shadow-2xl shadow-green-500 dark:shadow-green-700 transition-colors duration-1000;
 }
 
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
@@ -88,7 +91,7 @@ p {
     -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image: url('https://i.ytimg.com/vi/dihnz0won64/maxresdefault.jpg');
+    /* background-image: url('https://i.ytimg.com/vi/dihnz0won64/maxresdefault.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -96,7 +99,7 @@ p {
 /* Bottom Card Section */
 
 .property-description {
-    @apply bg-slate-400;
+    @apply bg-gray-300 dark:bg-gray-800 ;
     height: 20em;
     width: 50em;
     position: absolute;
