@@ -12,9 +12,27 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
         </div>
       );
     }
@@ -24,9 +42,27 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
         </div>
       );
     }
@@ -36,9 +72,27 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img className="h-[100%] w-[5%] mx-4" src={bola} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={bola}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
         </div>
       );
     }
@@ -48,9 +102,27 @@ function Vidas(props) {
           className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
           id="vida"
         >
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
-          <img className="h-[100%] w-[5%] mx-4" src={xis} alt="" />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
+          <img
+            className="h-[100%] w-[5%] mx-4"
+            src={xis}
+            alt=""
+            height="72px"
+            width="72px"
+          />
         </div>
       );
     }
