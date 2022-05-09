@@ -4,6 +4,7 @@ import perguntas from "../Futquiz.json";
 import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
 import { TwitterIcon } from "react-share";
+import { CgDarkMode } from "react-icons/cg";
 
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -126,6 +127,12 @@ function GameSimple() {
     }
   };
 
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   useEffect(() => {
     if (vidas === 0) {
       handleGameOver();
@@ -136,43 +143,62 @@ function GameSimple() {
 
   return (
     <>
-      <div id="vidas">
-        <Vidas vidas={vidas} />
-      </div>
-      <div className="text-center bebasGrudado text-7xl mt-[1%]" id="pontos">
-        Pontos: {ponto}
-      </div>
-      <div id="game" ref={game}>
-        <div class="center">
-          <div class="property-card">
-            <div className={"property-image"} id="imagem">
-              <div class="property-image-title">
-                {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
-              </div>
-            </div>
-            <div class="property-description">
-              <h5> Card Title </h5>
-              <p>{questao} </p>
-            </div>
-            <div className="row h-16 mt-[32rem] flex">
-              <div className="col-6">
-                <button
-                  className="bg-green-500 hover:bg-green-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
-                  onClick={handleVerdadeiro}
-                >
-                  Verdadeiro
-                </button>
-              </div>
-              <div className="col-6">
-                <button
-                  className="bg-red-500 hover:bg-red-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
-                  onClick={handleFalso}
-                >
-                  Falso
-                </button>
-              </div>
-            </div>
+      <div className={isActive ? "white" : "dark"}>
+        <div className="bg-neutral-300 absolute h-full w-full dark:bg-gray-700 transition-colors duration-1000">
+          <div id="vidas">
+            <Vidas vidas={vidas} />
           </div>
+          <div
+            className="text-center bebasGrudado text-7xl mt-[3%]"
+            id="pontos"
+          >
+            Pontos: {ponto}
+          </div>
+          <div id="game" ref={game}>
+            <div class="center">
+              <div class="property-card">
+                <div className={"property-image"} id="imagem">
+                  <div class="property-image-title">
+                    {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
+                  </div>
+                </div>
+                <div class="property-description">
+                  <h5 className="dark:text-slate-300"> Card Title </h5>
+                  <p className="dark:text-slate-400">{questao} </p>
+                </div>
+                <div className="row h-16 mt-[32rem] flex">
+                  <div className="col-6">
+                    <button
+                      className="bg-green-500 hover:bg-green-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
+                      onClick={handleVerdadeiro}
+                    >
+                      Verdadeiro
+                    </button>
+                  </div>
+                  <div className="col-6">
+                    <button
+                      className="bg-red-500 hover:bg-red-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
+                      onClick={handleFalso}
+                    >
+                      Falso
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              className="bg-gray-800 text-white font-bold p-4 rounded-full text-center absolute ml-6 top-[92%] group dark:bg-slate-300 duration-1000"
+              onClick={handleToggle}
+            >
+              <CgDarkMode className="dark:text-gray-800 duration-1000" />
+              <span className="absolute w-auto ml-12 p-2 rounded-md -mt-7 scale-0 transition-all duration-300 min-w-max origin-left bg-green-500 dark:bg-green-700 group-hover:scale-100">
+                {isActive ? "Tema Escuro" : "Tema Claro"}
+              </span>
+            </button>
+          </div>
+          <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-gray-800 text-xl dark:text-neutral-300 duration-1000">
+            Fut<strong className="text-green-600">Quiz</strong>
+          </footer>
         </div>
       </div>
     </>
