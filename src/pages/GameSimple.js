@@ -186,16 +186,16 @@ function GameSimple() {
                 </div>
               </div>
             </div>
-            <button
-              className="bg-gray-800 text-white font-bold p-4 rounded-full text-center absolute ml-6 top-[92%] group dark:bg-slate-300 duration-1000"
-              onClick={handleToggle}
-            >
-              <CgDarkMode className="dark:text-gray-800 duration-1000" />
-              <span className="absolute w-auto ml-12 p-2 rounded-md -mt-7 scale-0 transition-all duration-300 min-w-max origin-left bg-green-500 dark:bg-green-700 group-hover:scale-100">
-                {isActive ? "Tema Escuro" : "Tema Claro"}
-              </span>
-            </button>
           </div>
+          <button
+            className="bg-gray-800 text-white font-bold p-4 rounded-full text-center absolute ml-6 top-[92%] group dark:bg-slate-300 duration-1000"
+            onClick={handleToggle}
+          >
+            <CgDarkMode className="dark:text-gray-800 duration-1000" />
+            <span className="absolute w-auto ml-12 p-2 rounded-md -mt-7 scale-0 transition-all duration-300 min-w-max origin-left bg-green-500 dark:bg-green-700 group-hover:scale-100">
+              {isActive ? "Tema Escuro" : "Tema Claro"}
+            </span>
+          </button>
           <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-gray-800 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
