@@ -2,16 +2,156 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
-body{
-    @apply bg-slate-600
-}
+
 .bebas{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
 }
+.bebasGrudado{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
 .Pedrao{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
     font-size: 2.5rem;
 }
+.but{
+    width: -webkit-fill-available;
+}
+.Montserrat{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 12px;
+}
+
+.center {
+    /* height: 100vh;
+    width: 100%;
+    display: flex; */
+    margin-top: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card {
+    height: 35em;
+    width: 50em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    @apply shadow-2xl shadow-green-500 dark:shadow-green-700 transition-colors duration-1000;
+}
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image {
+    height: 15em;
+    width: 50em;
+    padding: 1em 2em;
+    position: Absolute;
+    top: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* background-image: url('https://i.ytimg.com/vi/dihnz0won64/maxresdefault.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description {
+    @apply bg-gray-300 dark:bg-gray-800 ;
+    height: 20em;
+    width: 50em;
+    position: absolute;
+    bottom: 0em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+/* Social Icons */
+
+
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+    height: 0em;
+    padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+    height: 32em;
+}
+
+.property-card:hover .property-social-icons {
+    background-color: white;
+}
+
+.property-card:hover .property-social-icons:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+*/

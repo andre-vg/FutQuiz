@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Zico está no top 5 artilheiros da Seleção Brasileira?",
+    "resposta": "V",
+    "imagem": "https://s.ebiografia.com/img/zi/co/zico_selea_a_o_brasileira.jpg"
+  },
+  {
+    "id": 2,
+    "pergunta": "A primeira copa do mundo foi sediada na América do Sul? ",
+    "resposta": "V",
+    "imagem": "https://placar.abril.com.br/wp-content/uploads/2021/09/esporte-copa-taca-20180614-001-1.jpg"
+  },
+  {
+    "id": 3,
+    "pergunta": "Rivaldo foi o artilheiro da copa de 2002?",
+    "resposta": "F",
+    "imagem": "https://a.espncdn.com/photo/2020/0420/r691271_1296x729_16-9.jpg"
+  },
+  {
+    "id": 4,
+    "pergunta": "Brasil alcançou o pentacampeonato em 1994?",
+    "resposta": "F",
+    "imagem": "https://www.radiogrenal.com.br/wp-content/uploads/2017/08/SELE%C3%87%C3%83O.jpeg"
+  },
+  {
+    "id": 5,
+    "pergunta": "O Palmeiras é o time brasileiro com mais participações na libertadores?",
+    "resposta": "V",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzN_JEBwMqtqXoXf6hE4SymRt5ktyHpg7vw&usqp=CAU"
+  },
+  {
+    "id": 6,
+    "pergunta": "O Palmeiras é o clube brasileiro com mais títulos de libertadores? ",
+    "resposta": "V",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzN_JEBwMqtqXoXf6hE4SymRt5ktyHpg7vw&usqp=CAU"
+  },
+  {
+    "id": 7,
+    "pergunta": "Cristiano Ronaldo é o maior artilheiro da história da UEFA Champions League?",
+    "resposta": "V",
+    "imagem": "https://www.juventus.com/images/image/private/t_editorial_landscape_12_desktop/f_auto/dev/nyuf6tne3npisv92zetr.jpg"
+  },
+  {
+    "id": 8,
+    "pergunta": "Flamengo é o maior campeão carioca?",
+    "resposta": "V",
+    "imagem": "https://placar.abril.com.br/wp-content/uploads/2021/09/50117601781_5661c8cff4_c.jpg"
+  },
+  {
+    "id": 9,
+    "pergunta": "A Seleção Brasileira ficou em terceiro lugar na Copa do Mundo de 2014, realizada no Brasil?",
+    "resposta": "F",
+    "imagem": "https://cdn.domtotal.com/img/noticias/2019-12/1409287_430002.jpg"
+  },
+  {
+    "id": 10,
+    "pergunta": "o Bahia já foi campeão brasileiro?",
+    "resposta": "V",
+    "imagem": "https://www.esporteclubebahia.com.br/wp-content/uploads/2016/07/IFR_BAHIA-FC1463.jpg"
+  },
+  {
+    "id": 11,
+    "pergunta": "A Itália está classificada para a Copa do Mundo de 2022?",
+    "resposta": "F",
+    "imagem": "https://mundoconectado.com.br/uploads/chamadas/copa-2022.jpg"
+  },
+  {
+    "id": 12,
+    "pergunta": "O Kaká foi a única pessoa a ganhar uma Bola de Ouro quando Messi e Cristiano Ronaldo estavam participando da premiação?",
+    "resposta": "V",
+    "imagem": "https://sportbuzz.uol.com.br/media/_versions/lenda-do-milan-elege-kaka-como-o-maior-brasileiro-do-clube_widelg.jpg"
+  },
+  {
+    "id": 13,
+    "pergunta": "O maior público já registrado em um estádio de futebol brasileiro foi na final da Copa do Mundo de 1950, no Maracanã?",
+    "resposta": "V",
+    "imagem": "https://classic.exame.com/wp-content/uploads/2016/10/size_960_16_9_bairro-maracana-no-rio-de-janeiro.png?w=960"
+  },
+  {
+    "id": 14,
+    "pergunta": "México e Estados Unidos foram as duas seleções convidadas para disputar a Copa América de 2019?",
+    "resposta": "F",
+    "imagem": "https://s2.glbimg.com/Ui0UDa5KTKWRMbx_YQllvX-Qi8I=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/7/f/9Z5CAlQjeNaWImH2yGAQ/copaamerica.png"
+  },
+  {
+    "id": 15,
+    "pergunta": "Botafogo foi o primeiro clube considerado grande no Brasil, a ser rebaixado para a Série B do Campeonato Brasileiro?",
+    "resposta": "F",
+    "imagem": "https://denimenezes.com/wp-content/uploads/2020/09/fantasma-da-serie-b-1080x675.png"
+  },
+  {
+    "id": 16,
+    "pergunta": "River Plate Atualmente (Abril de 2022), é o clube argentino com mais participações na Libertadores?",
+    "resposta": "V",
+    "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3225248:1651505895/River-Plate.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=e1389c3"
+  },
+  {
+    "id": 17,
+    "pergunta": "A edição de 1985 foi a última edição em que a final do Brasileirão não teve nenhum time carioca nem paulista?",
+    "resposta": "F",
+    "imagem": "https://oledobrasil.com.br/wp-content/uploads/2018/10/Brasileirao.jpg"
+  }
+]
