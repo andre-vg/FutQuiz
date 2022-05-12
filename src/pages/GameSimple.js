@@ -5,6 +5,9 @@ import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
 import { TwitterIcon } from "react-share";
 import { CgDarkMode } from "react-icons/cg";
+import { FiTwitter } from "react-icons/fi";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -51,36 +54,38 @@ function GameSimple() {
         <div className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <div className="row">
             <div className="col-12">
-              <h1 className="font-bold text-slate-100 bebas text-9xl">
-                GAME<strong className="text-red-500">OVER</strong>
+              <h1 className="font-bold text-green-600 bebas text-9xl dark:text-slate-100">
+                GAME
+                <strong className="dark:text-red-500 text-gray-500">
+                  OVER
+                </strong>
               </h1>
               <br />
-              <h2 className="text-slate-300 font-bold text-3xl">
+              <h2 className="text-gray-500 font-bold text-3xl">
                 Sua pontuação foi:
                 <strong className="font-extrabold text-green-600 text-4xl ml-1">
                   {ponto}
                 </strong>
               </h2>
-              <h2 className="text-slate-300 font-bold text-3xl">
+              <h2 className="text-gray-500 font-bold text-3xl">
                 Maior pontuação:
-                <strong className="font-extrabold text-sky-600 text-4xl ml-1">
+                <strong className="font-extrabold text-green-600 text-4xl ml-1">
                   {localStorage.getItem("MaiorScore")}
                 </strong>
               </h2>
             </div>
           </div>
           <div className="row">
-            <button className="bg-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl">
+            <button className="bg-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-xl">
               <a href="/dev">
-                <h2 className="text-slate-300 text-3xl font-extrabold">
-                  Jogar
-                  <strong className="font-extrabold text-black text-3xl ml-2">
-                    novamente
-                  </strong>
+                <h2 className="text-gray-500 text-3xl font-extrabold">
+                  Jogar novamente
                 </h2>
               </a>
             </button>
-            <div>
+          </div>
+          <div className="inline-flex">
+            <div className="col-auto">
               <TwitterShareButton
                 title={
                   "🎯 Acertei " +
@@ -91,12 +96,40 @@ function GameSimple() {
                 url={"https://futquiz-master.vercel.app/ \n"}
                 hashtags={["FutQuiz"]}
               >
-                <TwitterIcon
-                  className="bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-2xl"
+                <FiTwitter
+                  className="text-sky-400 bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-2xl"
                   size={80}
-                  round
                 />
               </TwitterShareButton>
+            </div>
+            <div className="col-auto">
+              <CopyToClipboard
+                text={
+                  "🎯 Acertei " +
+                  ponto +
+                  " Perguntas no #FutQuiz ⚽ " +
+                  " \n Veja quantas você acerta em: \n" +
+                  " https://futquiz-master.vercel.app/ \n"
+                }
+              >
+                <button
+                  className="group"
+                  onClick={() => {
+                    document.getElementById("copiado").innerHTML = "Copiado!";
+                  }}
+                >
+                  <MdOutlineContentCopy
+                    className="text-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-xl"
+                    size={80}
+                  ></MdOutlineContentCopy>
+                  <div
+                    id="copiado"
+                    className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-gray-800 py-2 rounded-xl shadow-md"
+                  >
+                    Copiar
+                  </div>
+                </button>
+              </CopyToClipboard>
             </div>
           </div>
         </div>,
@@ -143,7 +176,7 @@ function GameSimple() {
 
   return (
     <>
-      <div className={isActive ? "white" : "dark"}>
+      <div className={isActive ? "dark" : "white"}>
         <div className="bg-neutral-300 absolute h-full w-full dark:bg-gray-700 transition-colors duration-1000">
           <div id="vidas">
             <Vidas vidas={vidas} />
@@ -187,15 +220,6 @@ function GameSimple() {
               </div>
             </div>
           </div>
-          <button
-            className="bg-gray-800 text-white font-bold p-4 rounded-full text-center absolute ml-6 top-[92%] group dark:bg-slate-300 duration-1000"
-            onClick={handleToggle}
-          >
-            <CgDarkMode className="dark:text-gray-800 duration-1000" />
-            <span className="absolute w-auto ml-12 p-2 rounded-md -mt-7 scale-0 transition-all duration-300 min-w-max origin-left bg-green-500 dark:bg-green-700 group-hover:scale-100">
-              {isActive ? "Tema Escuro" : "Tema Claro"}
-            </span>
-          </button>
           <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-gray-800 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
