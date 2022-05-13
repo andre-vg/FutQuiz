@@ -13,6 +13,7 @@ function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
   const [ponto, setPonto] = useState(0);
   const [questao, setQuestao] = useState("");
+  const [nPegunta, setNPergunta] = useState(0);
   const [imagem, setImagem] = useState("");
   const [vidas, setVidas] = useState(3);
   const game = useRef(null);
@@ -54,20 +55,20 @@ function GameSimple() {
         <div className="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <div className="row">
             <div className="col-12">
-              <h1 className="font-bold text-green-600 bebas text-9xl dark:text-slate-100">
+              <h1 className="font-bold text-green-600 bebas text-9xl ">
                 GAME
-                <strong className="dark:text-red-500 text-gray-500">
+                <strong className="dark:text-neutral-300 text-neutral-700">
                   OVER
                 </strong>
               </h1>
               <br />
-              <h2 className="text-gray-500 font-bold text-3xl">
+              <h2 className="text-neutral-700 font-bold text-3xl dark:text-neutral-300">
                 Sua pontuação foi:
                 <strong className="font-extrabold text-green-600 text-4xl ml-1">
                   {ponto}
                 </strong>
               </h2>
-              <h2 className="text-gray-500 font-bold text-3xl">
+              <h2 className="text-neutral-700 font-bold text-3xl dark:text-neutral-300">
                 Maior pontuação:
                 <strong className="font-extrabold text-green-600 text-4xl ml-1">
                   {localStorage.getItem("MaiorScore")}
@@ -76,13 +77,13 @@ function GameSimple() {
             </div>
           </div>
           <div className="row">
-            <button className="bg-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-xl">
-              <a href="/dev">
-                <h2 className="text-gray-500 text-3xl font-extrabold">
+            <a href="/dev">
+              <button className="bg-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mt-8 shadow-lg hover:shadow-xl">
+                <h2 className="text-neutral-700 text-3xl font-extrabold dark:text-neutral-300">
                   Jogar novamente
                 </h2>
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
           <div className="inline-flex">
             <div className="col-auto">
@@ -124,7 +125,7 @@ function GameSimple() {
                   ></MdOutlineContentCopy>
                   <div
                     id="copiado"
-                    className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-gray-800 py-2 rounded-xl shadow-md"
+                    className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-neutral-700 py-2 rounded-xl shadow-md"
                   >
                     Copiar
                   </div>
@@ -146,6 +147,7 @@ function GameSimple() {
       if (questaoUsada.includes(random)) {
         geraQuestao();
       } else {
+        setNPergunta(nPegunta + 1);
         setQuestao(perguntas[random].pergunta);
         questaoUsada.push(random);
         console.log(questaoUsada);
@@ -177,12 +179,12 @@ function GameSimple() {
   return (
     <>
       <div className={isActive ? "dark" : "white"}>
-        <div className="bg-neutral-300 absolute h-full w-full dark:bg-gray-700 transition-colors duration-1000">
+        <div className="bg-neutral-300 absolute h-full w-full dark:bg-neutral-700 transition-colors duration-1000">
           <div id="vidas">
             <Vidas vidas={vidas} />
           </div>
           <div
-            className="text-center bebasGrudado text-7xl mt-[3%]"
+            className="text-center bebasGrudado text-7xl mt-[3%] text-black"
             id="pontos"
           >
             Pontos: {ponto}
@@ -196,13 +198,13 @@ function GameSimple() {
                   </div>
                 </div>
                 <div class="property-description">
-                  <h5 className="dark:text-slate-300"> Card Title </h5>
-                  <p className="dark:text-slate-400">{questao} </p>
+                  <h5 className="dark:text-slate-200">Pergunta {nPegunta}</h5>
+                  <p className="dark:text-slate-300">{questao} </p>
                 </div>
                 <div className="row h-16 mt-[32rem] flex">
                   <div className="col-6">
                     <button
-                      className="bg-green-500 hover:bg-green-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
+                      className="bg-green-600 hover:bg-green-700 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
                       onClick={handleVerdadeiro}
                     >
                       Verdadeiro
@@ -210,7 +212,7 @@ function GameSimple() {
                   </div>
                   <div className="col-6">
                     <button
-                      className="bg-red-500 hover:bg-red-600 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
+                      className="bg-red-600 hover:bg-red-700 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
                       onClick={handleFalso}
                     >
                       Falso
@@ -220,7 +222,7 @@ function GameSimple() {
               </div>
             </div>
           </div>
-          <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-gray-800 text-xl dark:text-neutral-300 duration-1000">
+          <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
         </div>

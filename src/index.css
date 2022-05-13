@@ -99,7 +99,7 @@ p {
 /* Bottom Card Section */
 
 .property-description {
-    @apply bg-gray-300 dark:bg-gray-800 ;
+    @apply bg-gray-300 dark:bg-neutral-800 ;
     height: 20em;
     width: 50em;
     position: absolute;
