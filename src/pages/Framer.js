@@ -8,8 +8,9 @@ import { CgDarkMode } from "react-icons/cg";
 import { FiTwitter } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";
+import { useMotionValue, useTransform, motion } from "framer-motion";
 
-function GameSimple() {
+function Framer() {
   const [aleatorio, setAleatorio] = useState(0);
   const [ponto, setPonto] = useState(0);
   const [questao, setQuestao] = useState("");
@@ -88,6 +89,7 @@ function GameSimple() {
           <div className="inline-flex">
             <div className="col-auto">
               <TwitterShareButton
+                className="group"
                 title={
                   "🎯 Acertei " +
                   ponto +
@@ -98,9 +100,15 @@ function GameSimple() {
                 hashtags={["FutQuiz"]}
               >
                 <FiTwitter
-                  className="text-sky-400 bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-2xl"
+                  className="text-green-600 bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-2xl"
                   size={80}
                 />
+                <div
+                  id="twitter"
+                  className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-neutral-700 py-2 px-2 rounded-xl shadow-md justify-center"
+                >
+                  Compartilhar
+                </div>
               </TwitterShareButton>
             </div>
             <div className="col-auto">
@@ -176,6 +184,8 @@ function GameSimple() {
     }
   }, [vidas]);
 
+  const x = useMotionValue(0);
+
   return (
     <>
       <div className={isActive ? "dark" : "white"}>
@@ -191,13 +201,39 @@ function GameSimple() {
           </div>
           <div id="game" ref={game}>
             <div class="center">
-              <div class="property-card">
+              <motion.div
+                class="property-card"
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                onDrag={(e, info) => {
+                  x.set(info.point.x);
+                  console.log(info.point.x);
+                }}
+                onDragEnd={(e, info) => {
+                  if (info.point.x >= 1500) {
+                    alert("Direita");
+                  }
+                  if (info.point.x <= 550) {
+                    alert("Esquerda");
+                  }
+                  // if (info.point.x > window.innerWidth / 2) {
+                  //   alert("Acertou!");
+                  //   setPonto(ponto + 1);
+                  //   setVidas(vidas + 1);
+                  //   geraQuestao();
+                  // } if (info.point.x < window.innerWidth / 2) {
+                  //   alert("Errou!");
+                  //   setVidas(vidas - 1);
+                  //   geraQuestao();
+                  // }
+                }}
+              >
                 <div className={"property-image"} id="imagem">
                   <div class="property-image-title">
                     {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
                   </div>
                 </div>
-                <div class="property-deion">
+                <div class="property-description">
                   <h5 className="dark:text-slate-200">Pergunta {nPegunta}</h5>
                   <p className="dark:text-slate-300">{questao} </p>
                 </div>
@@ -219,7 +255,7 @@ function GameSimple() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
@@ -231,4 +267,4 @@ function GameSimple() {
   );
 }
 
-export default GameSimple;
+export default Framer;

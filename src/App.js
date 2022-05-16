@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import GameSimple from "./pages/GameSimple";
 import Test from "./pages/Test";
 import Tutorial from "./pages/Tutorial";
+import Framer from "./pages/Framer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dev" element={<GameSimple />} />
         <Route path="/test" element={<Test />} />
         <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/framer" element={<Framer />} />
       </Routes>
     </Router>
   );
