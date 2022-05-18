@@ -74,7 +74,7 @@ p {
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     overflow: hidden;
-    @apply h-80 w-52 lg:w-80 lg:h-[26rem] xl:w-[34rem] shadow-2xl shadow-green-500 dark:shadow-green-700 transition-colors duration-1000;
+    @apply h-80 w-52 mb-[-50%] lg:mb-0 lg:w-80 lg:h-[26rem] xl:w-[34rem] shadow-2xl shadow-green-500 dark:shadow-green-700 transition-colors duration-1000;
 }
 
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
