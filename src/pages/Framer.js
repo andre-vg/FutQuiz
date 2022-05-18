@@ -8,8 +8,10 @@ import { CgDarkMode } from "react-icons/cg";
 import { FiTwitter } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";
+import { useMotionValue, useTransform, motion } from "framer-motion";
+import { IoMdTrophy } from "react-icons/io";
 
-function GameSimple() {
+function Framer() {
   const [aleatorio, setAleatorio] = useState(0);
   const [ponto, setPonto] = useState(0);
   const [questao, setQuestao] = useState("");
@@ -88,6 +90,7 @@ function GameSimple() {
           <div className="inline-flex">
             <div className="col-auto">
               <TwitterShareButton
+                className="group"
                 title={
                   "🎯 Acertei " +
                   ponto +
@@ -98,9 +101,15 @@ function GameSimple() {
                 hashtags={["FutQuiz"]}
               >
                 <FiTwitter
-                  className="text-sky-400 bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-2xl"
+                  className="text-green-600 bg-black-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-2xl"
                   size={80}
                 />
+                <div
+                  id="twitter"
+                  className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-neutral-700 py-2 px-2 rounded-xl shadow-md justify-center"
+                >
+                  Compartilhar
+                </div>
               </TwitterShareButton>
             </div>
             <div className="col-auto">
@@ -172,9 +181,22 @@ function GameSimple() {
     if (vidas === 0) {
       handleGameOver();
     } else {
+      console.log(xInput);
       geraQuestao();
     }
   }, [vidas]);
+
+  const x = useMotionValue(0);
+  const xInput = [
+    window.innerWidth * 0.25,
+    window.innerWidth * 0.5,
+    window.innerWidth * 0.75,
+  ];
+  const cor = useTransform(x, xInput, [
+    "--tw-shadow-color: #dc2626",
+    "--tw-shadow-color: #f8f8f8",
+    "--tw-shadow-color: #16a34a",
+  ]);
 
   return (
     <>
@@ -184,20 +206,49 @@ function GameSimple() {
             <Vidas vidas={vidas} />
           </div>
           <div
-            className="text-center bebasGrudado text-7xl mt-[3%] text-black"
+            className="mt-[12%] md:mt-[8%] lg:mt-[4%] xl:mt-[3%] inline-flex w-full justify-center"
             id="pontos"
           >
-            Pontos: {ponto}
+            <IoMdTrophy className="text-green-600" size={80} />
+            <h2>
+              <strong className="bebasGrudado ml-4 text-7xl font-bold">
+                {ponto}
+              </strong>
+            </h2>
           </div>
           <div id="game" ref={game}>
             <div class="center">
-              <div class="property-card">
+              <motion.div
+                style={{ cor }}
+                animate={{
+                  x: [0, -150, 0, 150, 0],
+                  transition: {
+                    duration: 2.5,
+                    ease: "easeInOut",
+                  },
+                }}
+                class="property-card"
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                onDrag={(e, info) => {
+                  x.set(info.point.x);
+                  console.log(info.point.x);
+                }}
+                onDragEnd={(e, info) => {
+                  if (info.point.x >= (window.innerWidth * 3) / 4) {
+                    handleVerdadeiro();
+                  }
+                  if (info.point.x <= (window.innerWidth * 1) / 4) {
+                    handleFalso();
+                  }
+                }}
+              >
                 <div className={"property-image"} id="imagem">
                   <div class="property-image-title">
                     {/* <!-->Card Title</h5> If you want it, turn on the CSS also. --> */}
                   </div>
                 </div>
-                <div class="property-deion">
+                <div class="property-description">
                   <h5 className="dark:text-slate-200">Pergunta {nPegunta}</h5>
                   <p className="dark:text-slate-300">{questao} </p>
                 </div>
@@ -219,10 +270,10 @@ function GameSimple() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
-          <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
+          <footer className="left-[50%] -translate-x-[50%] -translate-y-[95%] top-[95%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
         </div>
@@ -231,4 +282,4 @@ function GameSimple() {
   );
 }
 
-export default GameSimple;
+export default Framer;
