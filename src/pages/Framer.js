@@ -185,6 +185,8 @@ function Framer() {
   }, [vidas]);
 
   const x = useMotionValue(0);
+  const xInput = [-100, 0, 100];
+  const cor = useTransform(x, xInput, ["red", "yellow", "green"]);
 
   return (
     <>
@@ -202,30 +204,27 @@ function Framer() {
           <div id="game" ref={game}>
             <div class="center">
               <motion.div
+                animate={{
+                  x: [0, -150, 0, 150, 0],
+                  transition: {
+                    duration: 2.5,
+                    ease: "easeInOut",
+                  },
+                }}
                 class="property-card"
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
+                drag
+                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                 onDrag={(e, info) => {
                   x.set(info.point.x);
                   console.log(info.point.x);
                 }}
                 onDragEnd={(e, info) => {
-                  if (info.point.x >= 1500) {
-                    alert("Direita");
+                  if (info.point.x >= (window.innerWidth * 3) / 4) {
+                    handleVerdadeiro();
                   }
-                  if (info.point.x <= 550) {
-                    alert("Esquerda");
+                  if (info.point.x <= (window.innerWidth * 1) / 4) {
+                    handleFalso();
                   }
-                  // if (info.point.x > window.innerWidth / 2) {
-                  //   alert("Acertou!");
-                  //   setPonto(ponto + 1);
-                  //   setVidas(vidas + 1);
-                  //   geraQuestao();
-                  // } if (info.point.x < window.innerWidth / 2) {
-                  //   alert("Errou!");
-                  //   setVidas(vidas - 1);
-                  //   geraQuestao();
-                  // }
                 }}
               >
                 <div className={"property-image"} id="imagem">
