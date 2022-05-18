@@ -9,25 +9,25 @@ function Vidas(props) {
     if (vidas === 3) {
       return (
         <div
-          className="text-center bebasGrudado text-7xl mt-[1%] flex justify-center"
+          className="text-center bebasGrudado text-7xl mt-[3%] flex justify-center"
           id="vida"
         >
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
@@ -43,21 +43,21 @@ function Vidas(props) {
           id="vida"
         >
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"
@@ -73,21 +73,21 @@ function Vidas(props) {
           id="vida"
         >
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={bola}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"
@@ -103,21 +103,21 @@ function Vidas(props) {
           id="vida"
         >
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"
             width="72px"
           />
           <img
-            className="h-[100%] w-[5%] mx-4"
+            className="h-[100%] w-[12%] sm:w-[8%] lg:w-[5%] mx-4"
             src={xis}
             alt=""
             height="72px"

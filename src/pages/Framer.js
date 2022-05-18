@@ -9,6 +9,7 @@ import { FiTwitter } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { useMotionValue, useTransform, motion } from "framer-motion";
+import { IoMdTrophy } from "react-icons/io";
 
 function Framer() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -180,13 +181,22 @@ function Framer() {
     if (vidas === 0) {
       handleGameOver();
     } else {
+      console.log(xInput);
       geraQuestao();
     }
   }, [vidas]);
 
   const x = useMotionValue(0);
-  const xInput = [-100, 0, 100];
-  const cor = useTransform(x, xInput, ["red", "yellow", "green"]);
+  const xInput = [
+    window.innerWidth * 0.25,
+    window.innerWidth * 0.5,
+    window.innerWidth * 0.75,
+  ];
+  const cor = useTransform(x, xInput, [
+    "--tw-shadow-color: #dc2626",
+    "--tw-shadow-color: #f8f8f8",
+    "--tw-shadow-color: #16a34a",
+  ]);
 
   return (
     <>
@@ -196,14 +206,20 @@ function Framer() {
             <Vidas vidas={vidas} />
           </div>
           <div
-            className="text-center bebasGrudado text-7xl mt-[3%] text-black"
+            className="mt-[12%] md:mt-[8%] lg:mt-[4%] xl:mt-[3%] inline-flex w-full justify-center"
             id="pontos"
           >
-            Pontos: {ponto}
+            <IoMdTrophy className="text-green-600" size={80} />
+            <h2>
+              <strong className="bebasGrudado ml-4 text-7xl font-bold">
+                {ponto}
+              </strong>
+            </h2>
           </div>
           <div id="game" ref={game}>
             <div class="center">
               <motion.div
+                style={{ cor }}
                 animate={{
                   x: [0, -150, 0, 150, 0],
                   transition: {
@@ -257,7 +273,7 @@ function Framer() {
               </motion.div>
             </div>
           </div>
-          <footer className="left-[48.2%] top-[94%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
+          <footer className="left-[50%] -translate-x-[50%] -translate-y-[95%] top-[95%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
         </div>
