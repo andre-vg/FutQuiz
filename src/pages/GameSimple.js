@@ -329,12 +329,12 @@ function GameSimple() {
                 </div>
                 <div class="property-description">
                   <h5 className="dark:text-slate-200">Pergunta {nPegunta}</h5>
-                  <p className="dark:text-slate-300 text-lg">{questao} </p>
+                  <p className="dark:text-slate-300 md:text-lg">{questao} </p>
                 </div>
               </motion.div>
             </div>
           </div>
-          <div className="left-[50%] -translate-x-[50%] -translate-y-[88%] top-[88%] absolute inline-flex">
+          <div className="left-[50%] -translate-x-[50%] -translate-y-[90%] top-[90%] absolute inline-flex">
             <button
               className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-500"
               onClick={handleClickFalso}
