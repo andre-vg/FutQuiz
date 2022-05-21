@@ -5,7 +5,7 @@ import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
 import { TwitterIcon } from "react-share";
 import { CgDarkMode } from "react-icons/cg";
-import { FiTwitter } from "react-icons/fi";
+import { FiTwitter, FiX } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";
 import {
@@ -15,6 +15,9 @@ import {
   useAnimation,
 } from "framer-motion";
 import { IoMdTrophy } from "react-icons/io";
+
+import { BiFootball, BiX, BiXCircle } from "react-icons/bi";
+import { BsCheckLg, BsX, BsXLg } from "react-icons/bs";
 
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -192,9 +195,12 @@ function GameSimple() {
     }
   }, [vidas]);
 
-  useEffect(() => {
-    gameStart();
-  }, []);
+  useEffect(
+    () => {
+      gameStart();
+    }, //repeat every time i click the card
+    []
+  );
 
   const x = useMotionValue(0);
   const xInput = [
@@ -231,6 +237,41 @@ function GameSimple() {
     });
   };
 
+  const opacity = useTransform(
+    x,
+    [
+      window.innerWidth * 0.25,
+      window.innerWidth * 0.5,
+      window.innerWidth * 0.75,
+    ],
+    [0, 1, 0]
+  );
+
+  const handleClickFalso = () => {
+    x.set(window.innerWidth * 0.25);
+    handleFalso();
+  };
+
+  const handleClickVerdadeiro = () => {
+    x.set(window.innerWidth * 0.75);
+    handleVerdadeiro();
+  };
+
+  const mudaCor = () => {
+    if (x.get() === window.innerWidth * 0.5) {
+      document.getElementById("card").style.boxShadow =
+        "0px 10px 15px -3px rgb(64, 64, 64)";
+    }
+    if (x.get() < window.innerWidth * 0.5) {
+      document.getElementById("card").style.boxShadow =
+        "0px 10px 15px -3px rgb(220, 38, 38)";
+    }
+    if (x.get() > window.innerWidth * 0.5) {
+      document.getElementById("card").style.boxShadow =
+        "0px 10px 15px -3px rgb(22, 163, 74)";
+    }
+  };
+
   return (
     <>
       <div className={isActive ? "dark" : "white"}>
@@ -252,27 +293,32 @@ function GameSimple() {
           <div id="game" ref={game}>
             <div class="center">
               <motion.div
-                style={{ cor }}
-                animate={
-                  // x: [0, -150, 0, 150, 0],
-                  // transition: {
-                  //   duration: 2.5,
-                  //   ease: "easeInOut",
-                  // },
-                  animar
-                }
-                class="property-card"
+                id="card"
+                animate={animar}
+                className="property-card transition-all duration-700"
                 drag
                 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                // onDrag={(e, info) => {
-                //   x.set(info.point.x);
-                // }}
+                onDrag={(e, info) => {
+                  x.set(info.point.x);
+                  mudaCor();
+                }}
                 onDragEnd={(e, info) => {
+                  if (
+                    info.point.x > window.innerWidth * 0.25 &&
+                    info.point.x < window.innerWidth * 0.75
+                  ) {
+                    x.set(window.innerWidth * 0.5);
+                    mudaCor();
+                  }
                   if (info.point.x >= (window.innerWidth * 3) / 4) {
                     handleVerdadeiro();
+                    x.set(window.innerWidth * 0.5);
+                    mudaCor();
                   }
                   if (info.point.x <= (window.innerWidth * 1) / 4) {
                     handleFalso();
+                    x.set(window.innerWidth * 0.5);
+                    mudaCor();
                   }
                 }}
               >
@@ -283,29 +329,26 @@ function GameSimple() {
                 </div>
                 <div class="property-description">
                   <h5 className="dark:text-slate-200">Pergunta {nPegunta}</h5>
-                  <p className="dark:text-slate-300">{questao} </p>
-                </div>
-                <div className="row h-16 mt-[32rem] flex">
-                  <div className="col-6">
-                    <button
-                      className="bg-green-600 hover:bg-green-700 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-r-none"
-                      onClick={handleVerdadeiro}
-                    >
-                      Verdadeiro
-                    </button>
-                  </div>
-                  <div className="col-6">
-                    <button
-                      className="bg-red-600 hover:bg-red-700 text-white font-bold pt-2 pb-6 px-8 rounded text-center w-[25rem] rounded-l-none"
-                      onClick={handleFalso}
-                    >
-                      Falso
-                    </button>
-                  </div>
+                  <p className="dark:text-slate-300 text-lg">{questao} </p>
                 </div>
               </motion.div>
             </div>
           </div>
+          <div className="left-[50%] -translate-x-[50%] -translate-y-[88%] top-[88%] absolute inline-flex">
+            <button
+              className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-500"
+              onClick={handleClickFalso}
+            >
+              <BsXLg size={17} />
+            </button>
+            <button
+              className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-green-600 transition-all duration-500 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full "
+              onClick={handleClickVerdadeiro}
+            >
+              <BsCheckLg size={17} />
+            </button>
+          </div>
+
           <footer className="left-[50%] -translate-x-[50%] -translate-y-[95%] top-[95%] absolute font-extrabold  text-neutral-700 text-xl dark:text-neutral-300 duration-1000">
             Fut<strong className="text-green-600">Quiz</strong>
           </footer>
