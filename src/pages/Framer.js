@@ -3,8 +3,6 @@ import { render } from "react-dom";
 import perguntas from "../Futquiz.json";
 import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
-import { TwitterIcon } from "react-share";
-import { CgDarkMode } from "react-icons/cg";
 import { FiTwitter } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";

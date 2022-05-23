@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Vidas from "./Vidas";
 
 function Tutorial() {
-  const [isActive, setActive] = useState("false");
+  const [isActive] = useState("false");
 
   useEffect(() => {
     document.getElementById(

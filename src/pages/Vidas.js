@@ -1,10 +1,5 @@
 import React from "react";
-import bola from "../assets/novaBola.png";
-import xis from "../assets/xis.png";
-import { BiFootball, BiX, BiXCircle } from "react-icons/bi";
-import { IoIosFootball, IoMdFootball } from "react-icons/io";
-import { RiFootballFill, RiFootballLine } from "react-icons/ri";
-import { GiSoccerBall, GiSoccerKick } from "react-icons/gi";
+import { GiSoccerBall } from "react-icons/gi";
 
 function Vidas(props) {
   const { vidas } = props;

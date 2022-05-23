@@ -18,6 +18,9 @@ import { IoMdTrophy } from "react-icons/io";
 
 import { BiFootball, BiX, BiXCircle } from "react-icons/bi";
 import { BsCheckLg, BsX, BsXLg } from "react-icons/bs";
+import useSound from "use-sound";
+import FimGame from "../assets/FimGame.mp3";
+import SomTrave from "../assets/SomTrave.mp3";
 
 function GameSimple() {
   const [aleatorio, setAleatorio] = useState(0);
@@ -28,6 +31,8 @@ function GameSimple() {
   const [vidas, setVidas] = useState(3);
   const game = useRef(null);
   const [questaoUsada, setQuestaoUsada] = useState([]);
+  const [play] = useSound(FimGame, { volume: 0.3 });
+  const [somTrave] = useSound(SomTrave, { volume: 0.5 });
 
   const handleFalso = () => {
     if (perguntas[aleatorio].resposta === "F") {
@@ -37,6 +42,8 @@ function GameSimple() {
     } else {
       console.log("Você errou!");
       animando();
+      //som trave
+      somTrave();
       setVidas(vidas - 1);
     }
   };
@@ -49,6 +56,7 @@ function GameSimple() {
     } else {
       console.log("Você errou!");
       animando();
+      somTrave();
       setVidas(vidas - 1);
     }
   };
@@ -59,6 +67,7 @@ function GameSimple() {
       document.getElementById("vidas").innerHTML = "";
       document.getElementById("pontos").innerHTML = "";
       document.getElementById("botoes").innerHTML = "";
+      play();
 
       if (ponto > localStorage.getItem("MaiorScore")) {
         localStorage.setItem("MaiorScore", ponto);
@@ -182,11 +191,7 @@ function GameSimple() {
     }
   };
 
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
+  const [isActive] = useState("false");
 
   useEffect(() => {
     if (vidas === 0) {
@@ -204,16 +209,6 @@ function GameSimple() {
   );
 
   const x = useMotionValue(0);
-  const xInput = [
-    window.innerWidth * 0.25,
-    window.innerWidth * 0.5,
-    window.innerWidth * 0.75,
-  ];
-  const cor = useTransform(x, xInput, [
-    "--tw-shadow-color: #dc2626",
-    "--tw-shadow-color: #f8f8f8",
-    "--tw-shadow-color: #16a34a",
-  ]);
 
   const animar = useAnimation();
 
@@ -237,16 +232,6 @@ function GameSimple() {
       },
     });
   };
-
-  const opacity = useTransform(
-    x,
-    [
-      window.innerWidth * 0.25,
-      window.innerWidth * 0.5,
-      window.innerWidth * 0.75,
-    ],
-    [0, 1, 0]
-  );
 
   const handleClickFalso = () => {
     x.set(window.innerWidth * 0.25);
@@ -302,8 +287,25 @@ function GameSimple() {
                 onDrag={(e, info) => {
                   x.set(info.point.x);
                   mudaCor();
+                  if (info.point.x > window.innerWidth * 0.5) {
+                    document.getElementById("verdadeiro").className =
+                      "bg-gray-200 shadow-lg dark:bg-neutral-800 scale-110 text-green-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-300";
+                    document.getElementById("falso").className =
+                      "bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-300";
+                  }
+                  if (info.point.x < window.innerWidth * 0.5) {
+                    document.getElementById("falso").className =
+                      "bg-gray-200 shadow-lg dark:bg-neutral-800 scale-110 text-red-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-300";
+                    document.getElementById("verdadeiro").className =
+                      "bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-green-600 transition-all duration-300 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full";
+                  }
                 }}
                 onDragEnd={(e, info) => {
+                  document.getElementById("falso").className =
+                    "bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-300";
+                  document.getElementById("verdadeiro").className =
+                    "bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-green-600 transition-all duration-300 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full";
+
                   if (
                     info.point.x > window.innerWidth * 0.25 &&
                     info.point.x < window.innerWidth * 0.75
@@ -340,13 +342,15 @@ function GameSimple() {
             id="botoes"
           >
             <button
-              className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-500"
+              id="falso"
+              className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-red-600 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full transition-all duration-300"
               onClick={handleClickFalso}
             >
               <BsXLg size={17} />
             </button>
             <button
-              className=" bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-green-600 transition-all duration-500 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full "
+              id="verdadeiro"
+              className="bg-gray-200 shadow-lg dark:bg-neutral-800 hover:scale-110 hover:text-green-600 transition-all duration-300 text-neutral-600 font-bold mb-2 mx-4 py-3 px-4 rounded-full "
               onClick={handleClickVerdadeiro}
             >
               <BsCheckLg size={17} />

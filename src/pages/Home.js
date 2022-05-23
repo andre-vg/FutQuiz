@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CgDarkMode } from "react-icons/cg";
+import useSound from "use-sound";
+import StartGame from "../assets/StartGame.mp3";
 
 function Home() {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
+  const [isActive] = useState("false");
+  const [playStart] = useSound(StartGame, { volume: 0.3 });
 
   return (
     <div className={isActive ? "white" : "dark"}>
@@ -24,7 +22,10 @@ function Home() {
             <br />
           </div>
           <Link to="/dev">
-            <button className="bg-green-600 hover:scale-125 text-neutral-700 dark:text-slate-200 font-bold py-2 px-4 rounded mt-4 text-center shadow-xl  dark:shadow-lg dark:shadow-green-600 duration-500">
+            <button
+              onClick={playStart}
+              className="bg-green-600 hover:scale-125 text-neutral-700 dark:text-slate-200 font-bold py-2 px-4 rounded mt-4 text-center shadow-xl  dark:shadow-lg dark:shadow-green-600 duration-500"
+            >
               Jogar
             </button>
           </Link>
