@@ -31,74 +31,146 @@
   },
   {
     "id": 6,
-    "pergunta": "O Palmeiras é o clube brasileiro com mais títulos de libertadores? ",
-    "resposta": "V",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzN_JEBwMqtqXoXf6hE4SymRt5ktyHpg7vw&usqp=CAU"
-  },
-  {
-    "id": 7,
     "pergunta": "Cristiano Ronaldo é o maior artilheiro da história da UEFA Champions League?",
     "resposta": "V",
     "imagem": "https://www.juventus.com/images/image/private/t_editorial_landscape_12_desktop/f_auto/dev/nyuf6tne3npisv92zetr.jpg"
   },
   {
-    "id": 8,
+    "id": 7,
     "pergunta": "Flamengo é o maior campeão carioca?",
     "resposta": "V",
     "imagem": "https://placar.abril.com.br/wp-content/uploads/2021/09/50117601781_5661c8cff4_c.jpg"
   },
   {
-    "id": 9,
+    "id": 8,
     "pergunta": "A Seleção Brasileira ficou em terceiro lugar na Copa do Mundo de 2014, realizada no Brasil?",
     "resposta": "F",
     "imagem": "https://cdn.domtotal.com/img/noticias/2019-12/1409287_430002.jpg"
   },
   {
-    "id": 10,
+    "id": 9,
     "pergunta": "o Bahia já foi campeão brasileiro?",
     "resposta": "V",
     "imagem": "https://www.esporteclubebahia.com.br/wp-content/uploads/2016/07/IFR_BAHIA-FC1463.jpg"
   },
   {
-    "id": 11,
+    "id": 10,
     "pergunta": "A Itália está classificada para a Copa do Mundo de 2022?",
     "resposta": "F",
     "imagem": "https://mundoconectado.com.br/uploads/chamadas/copa-2022.jpg"
   },
   {
-    "id": 12,
+    "id": 11,
     "pergunta": "O Kaká foi a única pessoa a ganhar uma Bola de Ouro quando Messi e Cristiano Ronaldo estavam participando da premiação?",
     "resposta": "V",
     "imagem": "https://sportbuzz.uol.com.br/media/_versions/lenda-do-milan-elege-kaka-como-o-maior-brasileiro-do-clube_widelg.jpg"
   },
   {
-    "id": 13,
+    "id": 12,
     "pergunta": "O maior público já registrado em um estádio de futebol brasileiro foi na final da Copa do Mundo de 1950, no Maracanã?",
     "resposta": "V",
     "imagem": "https://classic.exame.com/wp-content/uploads/2016/10/size_960_16_9_bairro-maracana-no-rio-de-janeiro.png?w=960"
   },
   {
-    "id": 14,
+    "id": 13,
     "pergunta": "México e Estados Unidos foram as duas seleções convidadas para disputar a Copa América de 2019?",
     "resposta": "F",
     "imagem": "https://imagens.ebc.com.br/_ihi9gAK_e3zf0o6p_GG9GaxgeY=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ffraz_20190707_abr_1651.jpg?itok=-QzJlvcs"
   },
   {
-    "id": 15,
+    "id": 14,
     "pergunta": "Botafogo foi o primeiro clube considerado grande no Brasil, a ser rebaixado para a Série B do Campeonato Brasileiro?",
     "resposta": "F",
     "imagem": "https://denimenezes.com/wp-content/uploads/2020/09/fantasma-da-serie-b-1080x675.png"
   },
   {
-    "id": 16,
+    "id": 15,
     "pergunta": "River Plate Atualmente (Abril de 2022), é o clube argentino com mais participações na Libertadores?",
     "resposta": "V",
     "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3225248:1651505895/River-Plate.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=e1389c3"
   },
   {
-    "id": 17,
+    "id": 16,
     "pergunta": "A edição de 1985 foi a última edição em que a final do Brasileirão não teve nenhum time carioca nem paulista?",
     "resposta": "F",
     "imagem": "https://oledobrasil.com.br/wp-content/uploads/2018/10/Brasileirao.jpg"
+  },
+  {
+    "id": 17,
+    "pergunta": "Vinícius Júnior foi quem fez o gol para garantir a vitória do Real Madrid na final da Champions league de 2022?",
+    "resposta": "V",
+    "imagem": "https://i0.wp.com/trivela.com.br/wp-content/uploads/2022/05/Vinicius-Junior-Real-Madrid.jpg?fit=2560%2C1440&ssl=1"
+  },
+  {
+    "id": 18,
+    "pergunta": "Liverpool foi o campeão da temporada de 2022 da Champions League? ",
+    "resposta": "F",
+    "imagem": "https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/fbl-eur-c1-tottenham-liverpool-fans-5cf2ef9f925644486f000002.jpg"
+  },
+  {
+    "id": 19,
+    "pergunta": "O Maracanã ainda é o maior estádio do mundo? ",
+    "resposta": "F",
+    "imagem": "https://images4.alphacoders.com/569/thumb-1920-569025.jpg"
+  },
+  {
+    "id": 20,
+    "pergunta": "O Michigan Stadium no Estados Unidos, é o maior estádio em capacidade do mundo?",
+    "resposta": "F",
+    "imagem": "http://mgoblue.com/images/2014/8/28/10254684.jpeg"
+  },
+  {
+    "id": 21,
+    "pergunta": "Coréia do Sul e o Japão foram os países a sediar a copa de 2002?",
+    "resposta": "V",
+    "imagem": "https://conteudo.imguol.com.br/c/esporte/a5/2017/06/29/cafu-ergue-a-taca-da-copa-do-mundo-de-2002-sob-olhares-de-companheiros-e-comissao-tecnica-da-selecao-1498770420824_1920x1080.jpg"
+  },
+  {
+    "id": 22,
+    "pergunta": "A copa do mundo de 2012 foi sediada no Brasil?",
+    "resposta": "F",
+    "imagem": "https://c.tenor.com/53mmUaqb1b0AAAAC/copa-torcedor.gif"
+  },
+  {
+    "id": 23,
+    "pergunta": "A Laranja Mecânica (Holanda), nunca foi campeã da copa do mundo.",
+    "resposta": "V",
+    "imagem": "https://placar.abril.com.br/wp-content/uploads/2021/09/21-copa-1974-original.jpeg"
+  },
+  {
+    "id": 24,
+    "pergunta": "Pelé é o único jogador a vencer três Copas do Mundo.",
+    "resposta": "V",
+    "imagem": "https://images.mantosdofutebol.com.br/wp-content/uploads/2013/07/pele-coluna-bauru-1240x540.png"
+  },
+  {
+    "id": 25,
+    "pergunta": "Argentina é a seleção com mais vices em copas do mundo.",
+    "resposta": "F",
+    "imagem": "https://imagens.ebc.com.br/YcEU8GEEHW2y0s1JDiIBFJWZ_AY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/923408-%20maracana_argentina_alemanha-3289.jpg?itok=UYm1C86w"
+  },
+  {
+    "id": 26,
+    "pergunta": "Ronaldo Luís Nazário de Lima, ou Ronaldo Fenômeno é o maior artilheiro da copa do mundo.",
+    "resposta": "F",
+    "imagem": "https://www.lance.com.br/files/article_main/uploads/2018/11/15/5bedcf90501e4.jpeg"
+  },
+  {
+    "id": 27,
+    "pergunta": "O Brasil foi sede das edições de 1950 e 2014 da copa do mundo.",
+    "resposta": "V",
+    "imagem": "https://i0.wp.com/trivela.com.br/wp-content/uploads/2013/03/Fifa-Copa-do-Mundo-2014-e1363638993187.jpg?fit=2000%2C1125&ssl=1"
+  },
+  {
+    "id": 28,
+    "pergunta": "Roberto Dinamite é o maior artilheiro do Brasileirão.",
+    "resposta": "V",
+    "imagem": "https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2020/03/08-roberto-dinamite.jpg"
+  },
+  {
+    "id": 29,
+    "pergunta": "Romário é o jogador com maior número de gols em uma única edição do Brasileirão.",
+    "resposta": "F",
+    "imagem": "https://i.pinimg.com/originals/34/ba/ce/34bace5121f4c6656ad3024673706f47.jpg"
   }
 ]
