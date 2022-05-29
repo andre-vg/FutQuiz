@@ -32,7 +32,7 @@ function GameSimple() {
   const game = useRef(null);
   const [questaoUsada, setQuestaoUsada] = useState([]);
   const [play] = useSound(FimGame, { volume: 0.3 });
-  const [somTrave] = useSound(SomTrave, { volume: 0.5 });
+  const [somTrave] = useSound(SomTrave, { volume: 1 });
 
   const handleFalso = () => {
     if (perguntas[aleatorio].resposta === "F") {
