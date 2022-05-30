@@ -4,7 +4,7 @@ from venv import create
 from openpyxl import load_workbook
 
 # Lê o arquivo excel
-wb = load_workbook('Futquiz 29-05.xlsx')
+wb = load_workbook('Futquiz 30-05.xlsx')
 sheet = wb.active
 rows = sheet.rows
 
