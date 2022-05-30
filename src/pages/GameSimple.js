@@ -4,7 +4,7 @@ import perguntas from "../Futquiz.json";
 import Vidas from "./Vidas";
 import { TwitterShareButton } from "react-share";
 import { TwitterIcon } from "react-share";
-import { CgDarkMode } from "react-icons/cg";
+import { SiGoogleclassroom } from "react-icons/si";
 import { FiTwitter, FiX } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { MdOutlineContentCopy } from "react-icons/md";
@@ -160,6 +160,28 @@ function GameSimple() {
                   </div>
                 </button>
               </CopyToClipboard>
+            </div>
+            <div className="col-auto">
+              <button
+                className="group"
+                onClick={
+                  //go to url
+                  () => {
+                    window.open(
+                      "https://forms.gle/1P6aVFmtLoeCq1pv8",
+                      "_blank"
+                    );
+                  }
+                }
+              >
+                <SiGoogleclassroom
+                  className="text-green-600 scale-100 hover:scale-110 transition-all duration-300 p-4 rounded-3xl mx-2 mt-8 hover:shadow-xl"
+                  size={80}
+                ></SiGoogleclassroom>
+                <div className="scale-0 font-bold group-hover:scale-100 transition-all duration-300 bg-green-600 mt-6 text-neutral-700 py-2 rounded-xl shadow-md">
+                  FeedBack
+                </div>
+              </button>
             </div>
           </div>
         </div>,
