@@ -27,7 +27,7 @@
     "id": 5,
     "pergunta": "O Palmeiras é o time brasileiro com mais participações na libertadores?",
     "resposta": "V",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMzN_JEBwMqtqXoXf6hE4SymRt5ktyHpg7vw&usqp=CAU"
+    "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3138586:1637860767/Libertadores.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=91e75db"
   },
   {
     "id": 6,
@@ -61,116 +61,212 @@
   },
   {
     "id": 11,
-    "pergunta": "O Kaká foi a única pessoa a ganhar uma Bola de Ouro quando Messi e Cristiano Ronaldo estavam participando da premiação?",
-    "resposta": "V",
-    "imagem": "https://sportbuzz.uol.com.br/media/_versions/lenda-do-milan-elege-kaka-como-o-maior-brasileiro-do-clube_widelg.jpg"
-  },
-  {
-    "id": 12,
     "pergunta": "O maior público já registrado em um estádio de futebol brasileiro foi na final da Copa do Mundo de 1950, no Maracanã?",
     "resposta": "V",
     "imagem": "https://classic.exame.com/wp-content/uploads/2016/10/size_960_16_9_bairro-maracana-no-rio-de-janeiro.png?w=960"
   },
   {
-    "id": 13,
+    "id": 12,
     "pergunta": "México e Estados Unidos foram as duas seleções convidadas para disputar a Copa América de 2019?",
     "resposta": "F",
     "imagem": "https://imagens.ebc.com.br/_ihi9gAK_e3zf0o6p_GG9GaxgeY=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ffraz_20190707_abr_1651.jpg?itok=-QzJlvcs"
   },
   {
-    "id": 14,
+    "id": 13,
     "pergunta": "Botafogo foi o primeiro clube considerado grande no Brasil, a ser rebaixado para a Série B do Campeonato Brasileiro?",
     "resposta": "F",
     "imagem": "https://denimenezes.com/wp-content/uploads/2020/09/fantasma-da-serie-b-1080x675.png"
   },
   {
-    "id": 15,
+    "id": 14,
     "pergunta": "River Plate Atualmente (Abril de 2022), é o clube argentino com mais participações na Libertadores?",
     "resposta": "V",
     "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3225248:1651505895/River-Plate.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=e1389c3"
   },
   {
-    "id": 16,
+    "id": 15,
     "pergunta": "A edição de 1985 foi a última edição em que a final do Brasileirão não teve nenhum time carioca nem paulista?",
     "resposta": "F",
     "imagem": "https://oledobrasil.com.br/wp-content/uploads/2018/10/Brasileirao.jpg"
   },
   {
-    "id": 17,
+    "id": 16,
     "pergunta": "Vinícius Júnior foi quem fez o gol para garantir a vitória do Real Madrid na final da Champions league de 2022?",
     "resposta": "V",
     "imagem": "https://i0.wp.com/trivela.com.br/wp-content/uploads/2022/05/Vinicius-Junior-Real-Madrid.jpg?fit=2560%2C1440&ssl=1"
   },
   {
-    "id": 18,
+    "id": 17,
     "pergunta": "Liverpool foi o campeão da temporada de 2022 da Champions League? ",
     "resposta": "F",
     "imagem": "https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/fbl-eur-c1-tottenham-liverpool-fans-5cf2ef9f925644486f000002.jpg"
   },
   {
-    "id": 19,
+    "id": 18,
     "pergunta": "O Maracanã ainda é o maior estádio do mundo? ",
     "resposta": "F",
     "imagem": "https://images4.alphacoders.com/569/thumb-1920-569025.jpg"
   },
   {
-    "id": 20,
+    "id": 19,
     "pergunta": "O Michigan Stadium no Estados Unidos, é o maior estádio em capacidade do mundo?",
     "resposta": "F",
     "imagem": "http://mgoblue.com/images/2014/8/28/10254684.jpeg"
   },
   {
-    "id": 21,
+    "id": 20,
     "pergunta": "Coréia do Sul e o Japão foram os países a sediar a copa de 2002?",
     "resposta": "V",
     "imagem": "https://conteudo.imguol.com.br/c/esporte/a5/2017/06/29/cafu-ergue-a-taca-da-copa-do-mundo-de-2002-sob-olhares-de-companheiros-e-comissao-tecnica-da-selecao-1498770420824_1920x1080.jpg"
   },
   {
-    "id": 22,
+    "id": 21,
     "pergunta": "A copa do mundo de 2012 foi sediada no Brasil?",
     "resposta": "F",
     "imagem": "https://c.tenor.com/53mmUaqb1b0AAAAC/copa-torcedor.gif"
   },
   {
-    "id": 23,
+    "id": 22,
     "pergunta": "A Laranja Mecânica (Holanda), nunca foi campeã da copa do mundo.",
     "resposta": "V",
     "imagem": "https://placar.abril.com.br/wp-content/uploads/2021/09/21-copa-1974-original.jpeg"
   },
   {
-    "id": 24,
+    "id": 23,
     "pergunta": "Pelé é o único jogador a vencer três Copas do Mundo.",
     "resposta": "V",
     "imagem": "https://images.mantosdofutebol.com.br/wp-content/uploads/2013/07/pele-coluna-bauru-1240x540.png"
   },
   {
-    "id": 25,
+    "id": 24,
     "pergunta": "Argentina é a seleção com mais vices em copas do mundo.",
     "resposta": "F",
     "imagem": "https://imagens.ebc.com.br/YcEU8GEEHW2y0s1JDiIBFJWZ_AY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/923408-%20maracana_argentina_alemanha-3289.jpg?itok=UYm1C86w"
   },
   {
-    "id": 26,
+    "id": 25,
     "pergunta": "Ronaldo Luís Nazário de Lima, ou Ronaldo Fenômeno é o maior artilheiro da copa do mundo.",
     "resposta": "F",
     "imagem": "https://www.lance.com.br/files/article_main/uploads/2018/11/15/5bedcf90501e4.jpeg"
   },
   {
-    "id": 27,
+    "id": 26,
     "pergunta": "O Brasil foi sede das edições de 1950 e 2014 da copa do mundo.",
     "resposta": "V",
     "imagem": "https://i0.wp.com/trivela.com.br/wp-content/uploads/2013/03/Fifa-Copa-do-Mundo-2014-e1363638993187.jpg?fit=2000%2C1125&ssl=1"
   },
   {
-    "id": 28,
+    "id": 27,
     "pergunta": "Roberto Dinamite é o maior artilheiro do Brasileirão.",
     "resposta": "V",
     "imagem": "https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2020/03/08-roberto-dinamite.jpg"
   },
   {
-    "id": 29,
+    "id": 28,
     "pergunta": "Romário é o jogador com maior número de gols em uma única edição do Brasileirão.",
     "resposta": "F",
     "imagem": "https://i.pinimg.com/originals/34/ba/ce/34bace5121f4c6656ad3024673706f47.jpg"
+  },
+  {
+    "id": 29,
+    "pergunta": "Real Madrid foi o campeão da Champions League 2022?",
+    "resposta": "V",
+    "imagem": "https://www.realmadrid.com/img/cc_1920px/_he37810__20220530011047.jpg"
+  },
+  {
+    "id": 30,
+    "pergunta": "O jogador do Real Madrid Karim Benzema foi o artilheiro da Champions League 2022?",
+    "resposta": "V",
+    "imagem": "https://uploads.metropoles.com/wp-content/uploads/2020/12/20210411/Benzema-1-1024x683.jpg"
+  },
+  {
+    "id": 31,
+    "pergunta": "O jogador Marcelo é o primeiro brasileiro a erguer a taça da Champions League como capitão?",
+    "resposta": "V",
+    "imagem": "https://conteudo.imguol.com.br/c/esporte/93/2022/05/28/marcelo-do-real-madrid-segurando-a-taca-da-liga-dos-campeoes-1653775674905_v2_900x506.jpg"
+  },
+  {
+    "id": 32,
+    "pergunta": "A Seleção da Espanha foi a campeão da copa do mundo de 2006?",
+    "resposta": "F",
+    "imagem": "https://assets.b9.com.br/wp-content/uploads/2018/06/espanha2018-estatistica-b9.jpg"
+  },
+  {
+    "id": 33,
+    "pergunta": "2005 foi o ano em que Ronaldinho Gaúcho recebeu o titulo de melhor do mundo?",
+    "resposta": "V",
+    "imagem": "https://ichef.bbci.co.uk/news/640/cpsprodpb/88E3/production/_99634053_gettyimages-2192866.jpg"
+  },
+  {
+    "id": 34,
+    "pergunta": "Depois da renovar o contrato com o Paris Saint-Germain o jogador Kylian Mbappé passou a ser o dono do maior salario do futebol mundial?",
+    "resposta": "V",
+    "imagem": "https://i.pinimg.com/originals/f5/4a/3f/f54a3fdb8dc4eb2bd15dad3e6380c272.gif"
+  },
+  {
+    "id": 35,
+    "pergunta": "Lionel Messi tem um total de 5 títulos de melhor jogador do mundo?",
+    "resposta": "F",
+    "imagem": "https://monesport.cat/app/uploads/sites/12/2022/05/europapress_4115322_leo_messi_posa_balon_oro-1.jpg"
+  },
+  {
+    "id": 36,
+    "pergunta": "Cristiano Ronaldo tem um total 5 títulos de melhor jogador do mundo?",
+    "resposta": "V",
+    "imagem": "https://www.sopitas.com/wp-content/uploads/2017/10/cristiano-ronaldo-balon-oro.jpg?w=860"
+  },
+  {
+    "id": 37,
+    "pergunta": "No dia 8 de agosto de 2021 foi marcada pela emblemática saída do jogador Lionel Messi do Barcelona após 21 anos?",
+    "resposta": "F",
+    "imagem": "https://colunabarcelona.com/wp-content/uploads/2019/11/199.jpg"
+  },
+  {
+    "id": 38,
+    "pergunta": "Edson Arantes do Nascimento, mais conhecido como Pelé nasceu no dia 23 de outubro de 1940?",
+    "resposta": "V",
+    "imagem": "https://i.pinimg.com/originals/a4/45/1f/a4451f179a44462568e794f9462a96c3.gif"
+  },
+  {
+    "id": 39,
+    "pergunta": "O jogador Luka Modric foi eleito o melhor jogador do mundo em 2018?",
+    "resposta": "V",
+    "imagem": "https://sempreinter.com/wp-content/uploads/2020/06/modric-1-scaled-e1592213888685-1280x720.jpg"
+  },
+  {
+    "id": 40,
+    "pergunta": "A Alemanha foi a equipe campeã da copa do mundo de 2014?",
+    "resposta": "V",
+    "imagem": "https://i0.wp.com/trivela.com.br/wp-content/uploads/2021/10/Alemanha.jpg?fit=1920%2C1080&ssl=1"
+  },
+  {
+    "id": 41,
+    "pergunta": "A final da copa do mundo de 2014 foi disputada entre Alemanha e Brasil?",
+    "resposta": "F",
+    "imagem": "https://media.gazetadopovo.com.br/2018/07/e9f6f67350096c579abd3076fa55fd29-gpMedium.jpg"
+  },
+  {
+    "id": 42,
+    "pergunta": "O trem bala da colina (Vasco da Gama), foi campeão brasileiro em 1999?",
+    "resposta": "F",
+    "imagem": "https://s2.glbimg.com/NC5ex0BR7lCJM57Sfa6rixXi6EE=/0x0:620x470/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/w/7/GkeQMNT9uS90D5IHos9w/ederneto.jpg"
+  },
+  {
+    "id": 43,
+    "pergunta": "O estádio do Clube Atlético Mineiro é o Estádio Nilton Santos mais conhecido como Engenhão?",
+    "resposta": "F",
+    "imagem": "https://www.estadios.net/wp-content/uploads/2018/12/estadio-mineirao.jpg"
+  },
+  {
+    "id": 44,
+    "pergunta": "A final da Libertadores de 2021 foi entre Flamengo e Palmeiras?",
+    "resposta": "V",
+    "imagem": "https://t2.tudocdn.net/620393?w=1920"
+  },
+  {
+    "id": 45,
+    "pergunta": "A final da libertadores de 2018 foi entre River Plate e Grêmio?",
+    "resposta": "F",
+    "imagem": "https://t2.tudocdn.net/620393?w=1920"
   }
 ]
